@@ -1,0 +1,383 @@
+/* -------= imports =------- */
+/* MIXINS */
+/* by https://bitbucket.org/wowua/ */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  padding: 0;
+  left: 0;
+  list-style: none outside none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+/* -------= delete border on active button =------- */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  /* */
+  border: none;
+}
+/* -------= delete border on active button =------- */
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= divider-block =------- */
+.divider-block {
+  margin-bottom: 100px;
+}
+/* -------= divider-block =------- */
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= first-block =------- */
+/* -------= first-block =------- */
+.main-div {
+  margin-top: 50px;
+}
+.top-triangle {
+  background: url('../static/img/top-triangle.png') center center no-repeat;
+  width: 220px;
+  height: 110px;
+}
+.middle-square {
+  background-color: black;
+  width: 110px;
+  height: 110px;
+}
+.bottom-trangle {
+  background: url('../static/img/bottom-triangle.png') center center no-repeat;
+  width: 220px;
+  height: 110px;
+}
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= variables =------- */
+/* -------= variables =------- */
+/* -------= second-block =------- */
+.second-block {
+  height: 140px;
+}
+.super-button {
+  position: relative;
+  height: 140px;
+  width: 600px;
+}
+.super-button:hover {
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+}
+.super-button:hover .super-button__backround-button {
+  background-image: -webkit-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -moz-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -o-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -ms-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: linear-gradient(to top, #0e2add, #b71f33);
+}
+.super-button__backround-button {
+  position: absolute;
+  margin-right: 13px;
+  line-height: 30px;
+  height: 140px;
+  width: 600px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-image: -webkit-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -moz-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -o-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -ms-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: linear-gradient(to top, #b71f33, #0e2add);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: -1;
+}
+.super-button__front-border-button {
+  position: absolute;
+  border: 3px solid #000000;
+  border-right: 3px solid transparent;
+  border-radius: 6px;
+  height: 140px;
+  width: 580px;
+  z-index: 2;
+}
+.super-button__text {
+  height: 140px;
+  width: 580px;
+  text-align: center;
+  line-height: 140px;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 50px;
+}
+.super-button__top-radius-fake {
+  position: absolute;
+  background: url('../static/img/button-top-radius-fake.png') center center no-repeat;
+  z-index: 3;
+  width: 26px;
+  height: 6px;
+  left: 574px;
+}
+.super-button__bottom-radius-fake {
+  position: absolute;
+  background: url('../static/img/button-bottom-radius-fake.png') center center no-repeat;
+  z-index: 3;
+  width: 26px;
+  height: 6px;
+  left: 574px;
+  top: 134px;
+}
+.super-button__right-triangle {
+  position: absolute;
+  background: url('../static/img/button-right-triangle.png') center center no-repeat;
+  z-index: 3;
+  width: 22px;
+  height: 28px;
+  left: 578px;
+  top: 56px;
+}
+.super-button__right-top-border {
+  position: absolute;
+  background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+  z-index: 3;
+  width: 22px;
+  height: 50px;
+  left: 578px;
+  top: 6px;
+}
+.super-button__right-bottom-border {
+  position: absolute;
+  background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+  z-index: 3;
+  width: 22px;
+  height: 50px;
+  left: 578px;
+  top: 84px;
+}
+.super-button-2 {
+  position: relative;
+  height: 45px;
+  width: 300px;
+}
+.super-button-2:hover {
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+}
+.super-button-2:hover .super-button__backround-button-2 {
+  background-image: -webkit-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -moz-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -o-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: -ms-linear-gradient(bottom, #0e2add, #b71f33);
+  background-image: linear-gradient(to top, #0e2add, #b71f33);
+}
+.super-button__backround-button-2 {
+  position: absolute;
+  margin-right: 13px;
+  line-height: 30px;
+  height: 45px;
+  width: 300px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-image: -webkit-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -moz-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -o-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: -ms-linear-gradient(bottom, #b71f33, #0e2add);
+  background-image: linear-gradient(to top, #b71f33, #0e2add);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: -1;
+}
+.super-button__front-border-button-2 {
+  position: absolute;
+  border: 3px solid #000000;
+  border-right: 3px solid transparent;
+  border-radius: 6px;
+  height: 45px;
+  width: 280px;
+  z-index: 2;
+}
+.super-button__text-2 {
+  height: 45px;
+  width: 280px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 15px;
+}
+.super-button__top-radius-fake-2 {
+  position: absolute;
+  background: url('../static/img/button-top-radius-fake.png') center center no-repeat;
+  z-index: 3;
+  width: 26px;
+  height: 6px;
+  left: 274px;
+}
+.super-button__bottom-radius-fake-2 {
+  position: absolute;
+  background: url('../static/img/button-bottom-radius-fake.png') center center no-repeat;
+  z-index: 3;
+  width: 26px;
+  height: 6px;
+  left: 274px;
+  top: 39px;
+}
+.super-button__right-triangle-2 {
+  position: absolute;
+  background: url('../static/img/button-right-triangle.png') center center no-repeat;
+  z-index: 3;
+  width: 22px;
+  height: 28px;
+  left: 278px;
+  top: 8.5px;
+}
+.super-button__right-top-border-2 {
+  position: absolute;
+  background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+  z-index: 3;
+  width: 22px;
+  height: 2.5px;
+  left: 278px;
+  top: 6px;
+}
+.super-button__right-bottom-border-2 {
+  position: absolute;
+  background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+  z-index: 3;
+  width: 22px;
+  height: 2.5px;
+  left: 278px;
+  top: 36.5px;
+}
+/* -------= second-block =------- */
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= third-block =------- */
+.navbar__email {
+  float: left;
+  margin-top: 15px;
+  margin-left: 7px;
+}
+.form {
+  position: relative;
+}
+.navbar__email-input {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  float: right;
+  margin-right: 14px;
+  height: 20px;
+  width: 170px;
+  box-shadow: 0 1px 0 #fa7e34;
+  padding: 0 22px 0 6px;
+}
+.navbar__email-submit {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 22px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 0 none;
+  padding: 0;
+}
+/* -------= third-block =------- */
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= fourth-block =------- */
+.resizable-block {
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left left, left right, color-stop(50%, #cccccc), color-stop(50%, #cccccc), color-stop(50%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* IE10+ */
+  background: linear-gradient(to right, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+  padding: 25px;
+}
+/* -------= fourth-block =------- */
+#axis {
+  border: 5px #f7f7f7 solid;
+  font: 10pt normal Arial, sans-serif;
+  height: 900px;
+  margin: 30px auto 80px auto;
+  position: relative;
+  width: 900px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+}
+.plane {
+  top: 0%;
+  left: 0%;
+}
+.object {
+  position: absolute;
+  /** This css rule will make the object
+move smoothly and animated **/
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  /* Currently IE doesn't support for transition property http://www.w3schools.com/cssref/css3_pr_transition.asp */
+  /**
+		linear: The animation has the same speed from start to end.
+		ease: Default. The animation has a slow start, then fast, before it ends slowly.
+		ease-in: The animation has a slow start.
+		ease-out: The animation has a slow end.
+		ease-in-out: The animation has both a slow start and a slow end.
+		Credit Source: http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+	**/
+}
+/** DIAGONALLY MOVEMENT **/
+/** Move object diagonally (Northeast) **/
+#axis:hover .move-ne {
+  transform: translate(700px, 700px);
+}
+/* -------= imports =------- */

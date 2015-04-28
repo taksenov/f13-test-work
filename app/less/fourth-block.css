@@ -1,0 +1,43 @@
+/* -------= imports =------- */
+/* MIXINS */
+/* by https://bitbucket.org/wowua/ */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* -------= imports =------- */
+/* -------= fourth-block =------- */
+.resizable-block {
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left left, left right, color-stop(50%, #cccccc), color-stop(50%, #cccccc), color-stop(50%, #000000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* IE10+ */
+  background: linear-gradient(to right, #cccccc 50%, #cccccc 50%, #000000 50%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+  padding: 25px;
+}
+/* -------= fourth-block =------- */

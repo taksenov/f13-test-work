@@ -1,0 +1,68 @@
+/* -------= imports =------- */
+//@import "fonts";
+@import "mixins";
+
+/* -------= imports =------- */
+
+
+/* -------= Примесь для кнопки =------- */
+/* */
+.questoria-button ( @width: 188px,
+                    @height: 49px,
+                    @bradius: 23px,
+                    @bg-color1: #b71f33,
+                    @bg-color2: #dd234e,
+                    @hover-bg-color1: #d72034,
+                    @hover-bg-color2: #f4234f,
+                    @font-color: #ffffff,
+                    @box-shadow-top: #ffffff,
+                    @box-shadow-bottom: #79041f,
+                    @border-color: #79041f,
+                    @font-size: 24px
+                    ) {
+	width: @width;
+	height: @height;
+	-webkit-border-radius: @bradius;
+	-moz-border-radius: @bradius;
+	border-radius: @bradius;
+	background-color: #63ba0e;
+	-webkit-box-shadow:
+                inset 0 2px  @box-shadow-top,
+                inset 0 -5px  @box-shadow-bottom;
+    -moz-box-shadow:
+                inset 0 2px  @box-shadow-top,
+                inset 0 -5px  @box-shadow-bottom;
+	box-shadow:
+                inset 0 2px  @box-shadow-top,
+                inset 0 -5px  @box-shadow-bottom;
+	border: solid 1px @border-color;
+	background-image: -webkit-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -moz-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -o-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -ms-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: linear-gradient(to top, @bg-color1, @bg-color2);
+
+//    .georgia-bold-italic;
+    font-size: @font-size;
+    font-weight: bold;
+    color: @font-color;
+    text-shadow: 0 1px 1px rgba(0,0,0,.75);
+
+    &:hover {
+        .transition(0.2);
+        background-image: -webkit-linear-gradient(bottom, @hover-bg-color1, @hover-bg-color2);
+        background-image: -moz-linear-gradient(bottom, @hover-bg-color1, @hover-bg-color2);
+        background-image: -o-linear-gradient(bottom, @hover-bg-color1, @hover-bg-color2);
+        background-image: -ms-linear-gradient(bottom, @hover-bg-color1, @hover-bg-color2);
+        background-image: linear-gradient(to top, @hover-bg-color1, @hover-bg-color2);
+    }
+    outline: none;
+
+    z-index: 99999;
+}
+
+
+
+
+
+/* -------= Примесь для кнопки =------- */

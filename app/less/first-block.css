@@ -1,0 +1,22 @@
+/* -------= imports =------- */
+/* -------= imports =------- */
+/* -------= first-block =------- */
+/* -------= first-block =------- */
+.main-div {
+  margin-top: 50px;
+}
+.top-triangle {
+  background: url('../static/img/top-triangle.png') center center no-repeat;
+  width: 220px;
+  height: 110px;
+}
+.middle-square {
+  background-color: black;
+  width: 110px;
+  height: 110px;
+}
+.bottom-trangle {
+  background: url('../static/img/bottom-triangle.png') center center no-repeat;
+  width: 220px;
+  height: 110px;
+}

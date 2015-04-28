@@ -1,0 +1,67 @@
+
+
+
+#axis {
+    border: 5px #f7f7f7 solid;
+	font: 10pt normal Arial, sans-serif;
+	height: 900px;
+	margin: 30px auto 80px auto;
+	position: relative;
+	//text-align: center;
+	width: 900px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.7);
+
+}
+
+
+.plane {
+    top: 0%;
+    left: 0%;
+}
+
+.object {
+	position: absolute;
+/** This css rule will make the object
+move smoothly and animated **/
+	-webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+	/* Currently IE doesn't support for transition property http://www.w3schools.com/cssref/css3_pr_transition.asp */
+	/**
+		linear: The animation has the same speed from start to end.
+		ease: Default. The animation has a slow start, then fast, before it ends slowly.
+		ease-in: The animation has a slow start.
+		ease-out: The animation has a slow end.
+		ease-in-out: The animation has both a slow start and a slow end.
+		Credit Source: http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+	**/
+}
+
+/** DIAGONALLY MOVEMENT **/
+/** Move object diagonally (Northeast) **/
+#axis:hover .move-ne{
+	transform: translate(700px,700px);
+//	-webkit-transform: translate(350px,-350px);
+//	-o-transform: translate(350px,-350px);
+//	-moz-transform: translate(350px,-350px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

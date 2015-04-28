@@ -1,0 +1,264 @@
+/* -------= imports =------- */
+@import "mixins";
+
+/* -------= imports =------- */
+
+/* -------= variables =------- */
+@bg-color1: #b71f33;
+@bg-color2: #0e2add;
+
+@button-font-size: 50px;
+@button-height: @button-font-size + 90px;
+@button-width: 600px;
+
+@button-font-size-2: 15px;
+@button-height-2: @button-font-size-2 + 30px;
+@button-width-2: 300px;
+
+/* -------= variables =------- */
+
+/* -------= second-block =------- */
+
+.second-block {
+    height: @button-height;
+}
+
+.super-button {
+    //display: inline-block;
+    position: relative;
+    height: @button-height;
+    width: @button-width;
+
+    &:hover {
+
+        .transition(0.5);
+
+        .super-button__backround-button {
+            background-image: -webkit-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -moz-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -o-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -ms-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: linear-gradient(to top, @bg-color2, @bg-color1 );
+
+        }
+    }
+
+}
+
+.super-button__backround-button {
+    position: absolute;
+    margin-right: 13px;
+    line-height: 30px;
+    height: @button-height;
+    width: @button-width;
+    padding: 0 10px;
+    border-radius: 6px;
+    background-image: -webkit-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -moz-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -o-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -ms-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: linear-gradient(to top, @bg-color1, @bg-color2);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: -1;
+}
+
+.super-button__front-border-button {
+    position: absolute;
+    border: 3px solid #000000;
+    border-right: 3px solid transparent;
+    border-radius: 6px;
+    height: @button-height;
+    width: @button-width - 20px;
+    z-index: 2;
+}
+
+.super-button__text {
+    height: @button-height;
+    width: @button-width - 20px;
+    text-align: center;
+    line-height: @button-height;
+//    padding-top: 15px;
+//    padding-bottom: 15px;
+    z-index: 2;
+    //overflow: hidden;
+    color: #ffffff;
+    font-size: @button-font-size;
+}
+
+.super-button__top-radius-fake {
+    position: absolute;
+    background: url('../static/img/button-top-radius-fake.png') center center no-repeat;
+    z-index: 3;
+    width: 26px;
+    height: 6px;
+    left: @button-width - 26px;
+}
+
+.super-button__bottom-radius-fake {
+    position: absolute;
+    background: url('../static/img/button-bottom-radius-fake.png') center center no-repeat;
+    z-index: 3;
+    width: 26px;
+    height: 6px;
+    left: @button-width - 26px;
+    top: @button-height - 6px;
+}
+
+.super-button__right-triangle {
+    position: absolute;
+    background: url('../static/img/button-right-triangle.png') center center no-repeat;
+    z-index: 3;
+    width: 22px;
+    height: 28px;
+    left: @button-width - 22px;
+    top: (@button-height / 2) - 14px ;
+
+}
+
+.super-button__right-top-border {
+    position: absolute;
+    background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+    z-index: 3;
+    width: 22px;
+    height: (@button-height / 2) - 20px;
+    left: @button-width - 22px;
+    top: 6px;
+}
+
+.super-button__right-bottom-border {
+    position: absolute;
+    background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+    z-index: 3;
+    width: 22px;
+    height: (@button-height / 2) - 20px;
+    left: @button-width - 22px;
+    top: (@button-height / 2) + 14px;
+}
+
+
+.super-button-2 {
+    //display: inline-block;
+    position: relative;
+    height: @button-height-2;
+    width: @button-width-2;
+
+    &:hover {
+
+        .transition(0.5);
+
+        .super-button__backround-button-2 {
+            background-image: -webkit-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -moz-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -o-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: -ms-linear-gradient(bottom, @bg-color2, @bg-color1 );
+            background-image: linear-gradient(to top, @bg-color2, @bg-color1 );
+
+        }
+    }
+}
+
+.super-button__backround-button-2 {
+    position: absolute;
+    margin-right: 13px;
+    line-height: 30px;
+    height: @button-height-2;
+    width: @button-width-2;
+    padding: 0 10px;
+    border-radius: 6px;
+    background-image: -webkit-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -moz-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -o-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: -ms-linear-gradient(bottom, @bg-color1, @bg-color2);
+	background-image: linear-gradient(to top, @bg-color1, @bg-color2);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: -1;
+}
+
+.super-button__front-border-button-2 {
+    position: absolute;
+    border: 3px solid #000000;
+    border-right: 3px solid transparent;
+    border-radius: 6px;
+    height: @button-height-2;
+    width: @button-width-2 - 20px;
+    z-index: 2;
+}
+
+.super-button__text-2 {
+    height: @button-height-2;
+    width: @button-width-2 - 20px;
+    text-align: center;
+    line-height: @button-height-2;
+//    padding-top: 15px;
+//    padding-bottom: 15px;
+    z-index: 2;
+    //overflow: hidden;
+    color: #ffffff;
+    font-size: @button-font-size-2;
+}
+
+.super-button__top-radius-fake-2 {
+    position: absolute;
+    background: url('../static/img/button-top-radius-fake.png') center center no-repeat;
+    z-index: 3;
+    width: 26px;
+    height: 6px;
+    left: @button-width-2 - 26px;
+}
+
+.super-button__bottom-radius-fake-2 {
+    position: absolute;
+    background: url('../static/img/button-bottom-radius-fake.png') center center no-repeat;
+    z-index: 3;
+    width: 26px;
+    height: 6px;
+    left: @button-width-2 - 26px;
+    top: @button-height-2 - 6px;
+}
+
+.super-button__right-triangle-2 {
+    position: absolute;
+    background: url('../static/img/button-right-triangle.png') center center no-repeat;
+    z-index: 3;
+    width: 22px;
+    height: 28px;
+    left: @button-width-2 - 22px;
+    top: (@button-height-2 / 2) - 14px ;
+
+}
+
+.super-button__right-top-border-2 {
+    position: absolute;
+    background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+    z-index: 3;
+    width: 22px;
+    height: (@button-height-2 / 2) - 20px;
+    left: @button-width-2 - 22px;
+    top: 6px;
+}
+
+.super-button__right-bottom-border-2 {
+    position: absolute;
+    background: url('../static/img/button-fake-right-border.png') top left repeat-y;
+    z-index: 3;
+    width: 22px;
+    height: (@button-height-2 / 2) - 20px;
+    left: @button-width-2 - 22px;
+    top: (@button-height-2 / 2) + 14px;
+}
+
+
+/* -------= second-block =------- */
+
+
+
+
+
+
+
+
+
